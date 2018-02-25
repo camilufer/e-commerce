@@ -153,7 +153,7 @@
     "category": "accesorios",
     "stock": "9"
   }
-].
+],
 "juegos": [
   {
     "id": ,
@@ -184,7 +184,8 @@
     "description": "Little big planet ps-vita",
     "category": "juegos",
     "stock": "17"
-  },{
+  },
+  {
     "id": ,
     "img": "../img/xenoverse.jpg",
     "name": "Dragon Ball Xenoverse 2",
