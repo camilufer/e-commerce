@@ -19,7 +19,7 @@
  }
 
  #custom-search-input{
- 	margin: 2em;
+ 	margin-top: 1em;
     border: solid 0.2em #E4E4E4;
     border-radius: 6px;
     background-color: #fff;
@@ -50,23 +50,44 @@
     font-size: 23px;
 }
 
-ul{
+.registry{
 	list-style: none;
 	display: flex;
 	justify-content: flex-end;
 }
 
-li{ 
+.optionMenu{ 
 	margin-top:0.5em;
-	padding-left: 2em;
+	font-size: 15px;
+	display: inline-block;
+}
+.menu-desktop{
+	color: #fff;
+}
+
+
+button{
+	margin-top: 0.4em;
+	background-color: black;
+}
+
+.option{
+	font-weight: bolder;
+	margin-top:0.5em;
+    color: grey;
 	font-size: 15px;
 	display: inline-block;
 }
 
-a{
-	color: #fff;
+.option-desktop{
+	color: #494949;
+}
+li:hover{
+	color: teal;
 }
 
-button{
-	background-color: black;
+
+li+li:before {
+  content: "|";
+  padding: 0 1em;
 }
