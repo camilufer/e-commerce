@@ -19,7 +19,7 @@
  }
 
  #custom-search-input{
- 	margin: 2em;
+ 	margin-top: 1em;
     border: solid 0.2em #E4E4E4;
     border-radius: 6px;
     background-color: #fff;
@@ -68,5 +68,6 @@ a{
 }
 
 button{
+	margin-top: 0.4em;
 	background-color: black;
 }
