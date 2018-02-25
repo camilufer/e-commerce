@@ -3,7 +3,25 @@
 https://api.mercadopago.com/users/303963951/mercadopago_account/balance?access_token=APP_USR-3161981920499652-022413-3c7732b20924fa208626ce5df1fb1841__LA_LC__-303963951
 
 // https://api.mercadopago.com/users/30
-
+$(document).ready(function(){
+  $.ajax({
+    url: 'https://api.mercadolibre.com/categories/MLA113256',
+    type: 'GET',
+    dataType: 'json',
+    //data: {param1: 'value1'},
+  })
+  .done(function(response) {
+    console.log(response);
+    console.log("success");
+  })
+  .fail(function() {
+    console.log("error");
+  })
+  .always(function() {
+    console.log("complete");
+  });
+  
+})
 
 $('#buscar').click(function(){
 	const busqueda = $('#busqueda').val();
