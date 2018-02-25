@@ -6,37 +6,40 @@
   <title>e-Commerce</title>
   <link href="https://fonts.googleapis.com/css?family=Sofadi+One" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+  <img src="" alt="">
   <section class="container-fluid">
     <div class="row shipping">
-      <div class="col-xs-12 col-md-4">
-        <p>FREE SHIPPING on orders above $Kissu</p>
+      <div class="col-xs-2 dropdown hidden-md hidden-lg">
+        <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"><i class="as fa-bars"></i><span ></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ingresar</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mi carro</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registro</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-10 col-md-6">
+        <a href="#"><p class="p-shipping">FREE SHIPPING on orders above $Kissu</p></a>
+      </div>
+
+      <div class="col-md-6 hidden-xs">
+        <ul class="registry">
+          <li><a href="#">Registry</a></li>
+          <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
       </div>
     </div>
   </section>
-  <section>
-    <div class="container" id="containerSearch">
-      <div class="row">
-        <div class="col-md-2">
-          <img src="#" class="logo">
-        </div>
-        <div class="col-md-6">
-          <form class="search">
-            <input type="text" class="form-control" placeholder="¿Qué es lo que estás buscando?">
-          </form>
-        </div>
-        <div class="col-md-3">
-          <ul class="registry">
-            <li><a href="#">Registry</a></li>
-            <li><a href="#">Carro</a></li>
-            <li><a href="#">Login</a></li>
-          </ul>
-        </div>
+
+    <div class="row">
+      <div class="container-logo col-md-2">
+        <img src="assets/img/logotf.png" class="logo">
       </div>
-    </div>
-  </section>
 
   <section>
     <ul id="categories">
@@ -47,9 +50,20 @@
     </ul>
   </section>
     
+  <div class="row">
+    <div class="contenedor">
+      <p class="amount"></p>
+      <p class="balance"></p>
+    </div>
+  </div>
 
+  <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/token.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
+
 </body>
 </html>
