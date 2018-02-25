@@ -43,10 +43,10 @@
 
   <section>
     <ul id="categories">
-      <li><a href="#">Decoración</a></li>
-      <li><a href="#">Deportes</a></li>
-      <li><a href="#">Accesorios</a></li>
-      <li><a href="#">Juegos</a></li>
+      <li><a href="#decoraion">Decoración</a></li>
+      <li><a href="#deportes">Deportes</a></li>
+      <li><a href="#accesorios">Accesorios</a></li>
+      <li><a href="#juegos">Juegos</a></li>
     </ul>
   </section>
     
@@ -56,7 +56,22 @@
       <p class="balance"></p>
     </div>
   </div>
+  <section id="vanilla">
+    
+  </section>
 
+  Name: <input data-tw-bind="name" type="text">
+    <span data-tw-bind="name"></span>
+    <hr />
+    Surname: <input data-tw-bind="surname" type="text">
+    <span data-tw-bind="surname"></span>
+    <hr />
+    <button onclick="log()">See Scope Values</button>
+    <hr />
+    <button onclick="changeNameByCode()">Change Name By Code</button>
+    <hr />
+    <button onclick="changeSurnameByCode()">Change Surname By Code</button>
+    <hr />
   <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   
@@ -64,6 +79,9 @@
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/token.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
+  <script type="text/javascript" src="assets/js/vanilla.js"></script>
+  <script type="text/javascript" src="assets/js/route.js"></script>
+  <script type="text/javascript" src="assets/js/router.js"></script>
 
 </body>
 </html>
