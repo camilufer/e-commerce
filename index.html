@@ -10,45 +10,40 @@
 </head>
 <body>
   <img src="" alt="">
-  <section class="container-fluid">
-    <div class="row shipping">
-      <div class="col-xs-2 dropdown hidden-md hidden-lg">
-        <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"><i class="as fa-bars"></i><span ></span>
-        </button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ingresar</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mi carro</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registro</a></li>
-        </ul>
-      </div>
-      <div class="col-xs-10 col-md-6">
-        <a href="#"><p class="p-shipping">FREE SHIPPING on orders above $Kissu</p></a>
-      </div>
 
-      <div class="col-md-6 hidden-xs">
-        <ul class="registry">
-          <li><a href="#">Registry</a></li>
-          <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-          <li><a href="#">Login</a></li>
-        </ul>
+    <section class="container-fluid">
+      <div class="row shipping">
+      <div class="col-xs-2 dropdown hidden-sm hidden-md hidden-lg">
+
+          <button class="dropdown-toggle" type="button" id="dropdownMenu1" 
+          data-toggle="dropdown" aria-expanded="true"><i class="fas fa-bars"></i><span ></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ingresar</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mi carro</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registro</a></li>
+  </ul>
+</div>
+        <div class="col-xs-10 col-md-6">
+          <a href="#"><p class="p-shipping">FREE SHIPPING on orders above</p></a>
+        </div>
+        <div class="col-md-6 hidden-xs">
+          <ul class="registry">
+            <li class="optionMenu"><a class="menu-desktop" href="#">Registry</a></li>
+            <li class="optionMenu"><a class="menu-desktop" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li class="optionMenu"><a class="menu-desktop" href="#">Login</a></li>
+          </ul>
+        </div>
+
+        
       </div>
-    </div>
-  </section>
 
     <div class="row">
-      <div class="container-logo col-md-2">
+      <div class="container-logo col-md-12">
         <img src="assets/img/logotf.png" class="logo">
       </div>
 
-  <section>
-    <ul id="categories">
-      <li><a href="#decoracion">Decoración</a></li>
-      <li><a href="#deportes">Deportes</a></li>
-      <li><a href="#accesorios">Accesorios</a></li>
-      <li><a href="#juegos">Juegos</a></li>
-    </ul>
-  </section>
     
   <div class="row">
     <div class="contenedor">
@@ -56,22 +51,41 @@
       <p class="balance"></p>
     </div>
   </div>
-  <section id="vanilla">
-    
-  </section>
 
-  Name: <input data-tw-bind="name" type="text">
-    <span data-tw-bind="name"></span>
-    <hr />
-    Surname: <input data-tw-bind="surname" type="text">
-    <span data-tw-bind="surname"></span>
-    <hr />
-    <button onclick="log()">See Scope Values</button>
-    <hr />
-    <button onclick="changeNameByCode()">Change Name By Code</button>
-    <hr />
-    <button onclick="changeSurnameByCode()">Change Surname By Code</button>
-    <hr />
+  <section id="vanilla">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10">
+          <div id="custom-search-input">
+            <div class="input-group col-md-12">
+              <input type="text" class="form-control input-lg" placeholder="Buscar" />
+                <span class="input-group-btn">
+                  <button class="btn btn-info btn-lg" type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </span>
+            </div>
+          </div>
+        </div>
+   </div>
+ </section>
+     <section id="categories" class="row hidden-xs hidden-sm">
+     <div class=" text-center">
+       <ul id="categories" class="examples col-lg-12 col-md-12">
+         <li class="text-center option text-uppercase"><a class="option-desktop" href="">decoracion</a></li>
+         <li class="text-center option text-uppercase"><a class="option-desktop" href="">deportes</a></li>
+         <li class="text-center option text-uppercase"><a class="option-desktop" href="">accesorios</a></li>
+         <li class="text-center option text-uppercase"><a class="option-desktop" href="">juegos</a></li>
+         <li class="text-center option text-uppercase"><a class="option-desktop" href="">example</a></li>
+       </ul>
+     </div>
+   </section>
+
+
+
+
+
+  
+
+
   <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   
@@ -82,6 +96,5 @@
   <script type="text/javascript" src="assets/js/vanilla.js"></script>
   <script type="text/javascript" src="assets/js/route.js"></script>
   <script type="text/javascript" src="assets/js/router.js"></script>
-
 </body>
 </html>
