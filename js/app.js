@@ -1,5 +1,5 @@
 'use strict';
-
+//https://drive.google.com/uc?authuser=0&id=1KeXQ18oOS_4WZ-5QWwZHiPAwmbxNhLDZ&export=download
 (function () {
     function init() {
         var router = new Router([
@@ -15,8 +15,14 @@
 
 }());
 
-fetch(
- 'http:/localhost/mercado/data.json')
+$(function(){
+  $.getJSON('https://raw.githubusercontent.com/MrsPepa/e-commerce/master/js/data.json', function(data){
+    console.log(data);
+  })
+})
+
+/*fetch(
+ 'https://raw.githubusercontent.com/MrsPepa/e-commerce/master/js/data.json')
  .then(function(response) {
    console.log(response);
    return response.json();
@@ -26,4 +32,4 @@ fetch(
  })
  .catch(function(error){
    console.log('error : '+JSON.stringify(error)+" "+error.stack);
- })
+ })*/
