@@ -3,7 +3,7 @@
 (function () {
     function init() {
         var router = new Router([
-            new Route('decoracion', 'decoracion.html', true),
+          new Route('decoracion', 'decoracion.html', true),
           new Route('deportes', 'deportes.html'),
           new Route('accesorios', 'accesorios.html'),
           new Route('juegos', 'juegos.html'),
@@ -18,6 +18,10 @@
 $(function(){
   $.getJSON('https://raw.githubusercontent.com/MrsPepa/e-commerce/master/js/data.json', function(data){
     console.log(data);
+    const categorias = [];
+    for(let i = 0; i < data.length; i++) {
+      [i].push(categorias);
+    }
   })
 })
 
