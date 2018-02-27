@@ -19,10 +19,13 @@
           data-toggle="dropdown" aria-expanded="true"><i class="fas fa-bars"></i><span ></span>
   </button>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ingresar</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mi carro</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"></a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registro</a></li>
+  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Perfil</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Decoracion</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Deportes</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Accesorios</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Juegos</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Example</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Salir</a></li>
   </ul>
 </div>
         <div class="col-xs-10 col-md-6">
@@ -35,9 +38,9 @@
             <li class="optionMenu"><a class="menu-desktop" href="#">Login</a></li>
           </ul>
         </div>
-
-        
       </div>
+
+
 
     <div class="row">
       <div class="container-logo col-md-12">
@@ -52,13 +55,39 @@
     </div>
   </div>
 
+
+   <div class="panel-body">
+    <?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+ 
+                   
+    $MP_SHORT_NAME = "mp-app-303963951";
+    $MP_CLIENT_ID = "3161981920499652";
+    $MP_CLIENT_SECRET = "BZd641UsIgZmfZ1iCJqdrvCWD3s5b5qs";
+ 
+    echo "El codigo SHORT_NAME es: ".$MP_SHORT_NAME."<br>";
+    echo "El codigo CLIENT_ID es: ".$MP_CLIENT_ID."<br>";
+    echo "El codigo CLIENT_SECRET es: ".$MP_CLIENT_SECRET."<br>";
+ 
+   
+    require_once ('lib/mercadopago.php');
+ 
+    $mp = new MP ($MP_CLIENT_ID, $MP_CLIENT_SECRET);
+    $access_token = $mp->get_access_token();
+ 
+    echo "El codigo ACCESS_TOKEN es: ".$access_token."<br>";
+    ?>
+  </div>
+
   <section id="vanilla">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10">
           <div id="custom-search-input">
             <div class="input-group col-md-12">
-              <input type="text" class="form-control input-lg" placeholder="Buscar" />
+              <input id="busqueda" type="text" class="form-control input-lg" placeholder="Buscar" />
                 <span class="input-group-btn">
-                  <button class="btn btn-info btn-lg" type="button">
+                  <button id="buscar" class="btn btn-info btn-lg" type="button">
                     <i class="fas fa-search"></i>
                   </button>
                 </span>
@@ -79,19 +108,25 @@
      </div>
    </section>
 
+   <div id="contenedor">
+     <div id="info"></div>
+   </div>
 
+   <button id="pagar"> </button>
 
 
 
   
-
-
   <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/js/token.js"></script>
+   <script type="text/javascript" src="assets/js/shop.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
   <script type="text/javascript" src="assets/js/vanilla.js"></script>
   <script type="text/javascript" src="assets/js/route.js"></script>
