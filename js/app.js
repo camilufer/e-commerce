@@ -12,16 +12,15 @@
         ]);
     }
     init();
-
 }());
+
 //comentarios
 $(function(){
   $.getJSON('https://raw.githubusercontent.com/MrsPepa/e-commerce/master/js/data.json', function(data){
     console.log(data);
-    const categorias = [];
-    for(let i = 0; i < data.length; i++) {
-      [i].push(categorias);
-    }
+    const dataAcc = data.accesorios[0].img;
+    $('#carca').append(dataAcc);
+    
   })
 })
 

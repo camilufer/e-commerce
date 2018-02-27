@@ -2,12 +2,21 @@
 * {
   font-family: 'Sofadi One', cursive;
 }
-.color-azul {
-  color: blue;
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+#titleDecoration {
+  background-color: #F5F5F5;
+  text-align: center;
 }
 .shipping{
-	background-color: #000;
-	color: #fff;
+  background-color: #000;
+  color: #fff;
   font-size: 17px;
 }
 
@@ -17,80 +26,81 @@
 }
 
 .p-shipping:hover{
-	color: teal;
+  color: teal;
 }
-
- .logo{
- 	margin-top: 1em;
- 	width: 15em;
- }
-
+.logo {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 19em;
+}
  #custom-search-input{
- 	margin-top: 1em;
-    border: solid 0.2em #E4E4E4;
-    border-radius: 6px;
-    background-color: #fff;
+  margin-top: 1em;
+  border: solid 0.2em #E4E4E4;
+  border-radius: 6px;
+  background-color: #fff;
 }
 
 #custom-search-input input{
-    border: 0;
-    box-shadow: none;
+  border: 0;
+  box-shadow: none;
 }
 
 #custom-search-input button{
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: #666666;
-    padding: 0 8px 0 10px;
-    border-left: solid 1px #ccc;
+  margin: 2px 0 0 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  color: #666666;
+  padding: 0 8px 0 10px;
+  border-left: solid 1px #ccc;
 }
 
 #custom-search-input button:hover{
-    border: 0;
-    box-shadow: none;
-    border-left: solid 1px #ccc;
+  border: 0;
+  box-shadow: none;
+  border-left: solid 1px #ccc;
 }
 
 #custom-search-input .fa-search{
-    font-size: 23px;
+  font-size: 23px;
 }
 
 .registry{
-	list-style: none;
-	display: flex;
-	justify-content: flex-end;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.optionMenu{ 
-	margin-top:0.5em;
-	font-size: 15px;
-	display: inline-block;
+.optionMenu{
+  margin-top:0.5em;
+  font-size: 15px;
+  display: inline-block;
 }
 .menu-desktop{
-	color: #fff;
+  color: #fff;
 }
 
 
 button{
-	margin-top: 0.4em;
-	background-color: black;
+  margin-top: 0.4em;
+  background-color: black;
 }
 
 .option{
-	font-weight: bolder;
-	margin-top:0.5em;
+  font-weight: bolder;
+  margin-top:0.5em;
     color: grey;
-	font-size: 15px;
-	display: inline-block;
+  font-size: 15px;
+  display: inline-block;
 }
 
 .option-desktop{
-	color: #494949;
+  color: #494949;
 }
 li:hover{
-	color: teal;
+  color: teal;
 }
 
 li+li:before {
