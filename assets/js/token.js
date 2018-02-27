@@ -9,7 +9,7 @@ mp.getAccessToken(function (err, accessToken){
 */
 
 //Datos iniciales
-var MP_SHORT_NAME = "SHORT_NAME_AQUI";
+/*var MP_SHORT_NAME = "SHORT_NAME_AQUI";
 var MP_CLIENT_ID = "CLIENT_ID_AQUI";
 var MP_CLIENT_SECRET = "CLIENT_SECRET_AQUI";
  
@@ -23,7 +23,7 @@ var mp = new MP ("3161981920499652", "BZd641UsIgZmfZ1iCJqdrvCWD3s5b5qs");
  
 mp.getAccessToken(function (err, accessToken){
     console.log ("El codigo ACCESS_TOKEN es: "+accessToken);
-});
+});*/
  
 //Inicializar API
 /*var mercadopago = require('mercadopago');
