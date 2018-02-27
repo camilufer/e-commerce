@@ -14,7 +14,7 @@
     init();
 
 }());
-
+//comentarios
 $(function(){
   $.getJSON('https://raw.githubusercontent.com/MrsPepa/e-commerce/master/js/data.json', function(data){
     console.log(data);
