@@ -10,11 +10,9 @@
 </head>
 <body>
   <img src="" alt="">
-
     <section class="container-fluid">
       <div class="row shipping">
       <div class="col-xs-2 dropdown hidden-sm hidden-md hidden-lg">
-
           <button class="dropdown-toggle" type="button" id="dropdownMenu1" 
           data-toggle="dropdown" aria-expanded="true"><i class="fas fa-bars"></i><span ></span>
   </button>
