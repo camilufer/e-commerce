@@ -1,3 +1,4 @@
+
 /*
 var MP = require ("mercadopago");
 
@@ -40,3 +41,4 @@ mercadopago.configure({
 
 
 //npm install mercado pago, luego entrar a carpeta js y luego node token.js y nos entregara el token
+

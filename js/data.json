@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD:assets/js/data.json
+"decoración": [
+=======
     "decoración": [
+>>>>>>> 40e44c89022d1a6e1eeb46fbcff16d18b24c7525:js/data.json
   {
     "id": 1,
     "img": "../img/lavander.jpg",
@@ -135,7 +139,11 @@
     "stock": "11"
   },
   {
+<<<<<<< HEAD:assets/js/data.json
+    "id": 13,
+=======
     "id": 14,
+>>>>>>> 40e44c89022d1a6e1eeb46fbcff16d18b24c7525:js/data.json
     "img": "../img/echarpe.jpg",
     "name": "Echarpe",
     "marca": "Basement",
@@ -145,7 +153,11 @@
     "stock": "20"
   },
   {
+<<<<<<< HEAD:assets/js/data.json
+    "id": 14,
+=======
     "id": 15,
+>>>>>>> 40e44c89022d1a6e1eeb46fbcff16d18b24c7525:js/data.json
     "img": "../img/cosmetiquero.jpg",
     "name": "Cosmetiquero",
     "marca": "Amphora",
@@ -157,7 +169,11 @@
 ],
 "juegos": [
   {
+<<<<<<< HEAD:assets/js/data.json
+    "id": 15,
+=======
     "id": 16,
+>>>>>>> 40e44c89022d1a6e1eeb46fbcff16d18b24c7525:js/data.json
     "img": "../img/mansion-luigi.jpg",
     "name": "Luigi's Mansion",
     "marca": "Nintendo",
@@ -167,7 +183,11 @@
     "stock": "20"
   },
   {
+<<<<<<< HEAD:assets/js/data.json
+    "id": 16,
+=======
     "id": 17,
+>>>>>>> 40e44c89022d1a6e1eeb46fbcff16d18b24c7525:js/data.json
     "img": "../img/godofwar.jpg",
     "name": "God of War collection",
     "marca": "Sony",
@@ -177,7 +197,11 @@
     "stock": "15"
   },
   {
+<<<<<<< HEAD:assets/js/data.json
+    "id": 17,
+=======
     "id": 18,
+>>>>>>> 40e44c89022d1a6e1eeb46fbcff16d18b24c7525:js/data.json
     "img": "../img/little-big-planet.jpg",
     "name": "Little Big Planet",
     "marca": "Sony",
@@ -187,7 +211,11 @@
     "stock": "17"
   },
   {
+<<<<<<< HEAD:assets/js/data.json
+    "id": 18,
+=======
     "id": 19,
+>>>>>>> 40e44c89022d1a6e1eeb46fbcff16d18b24c7525:js/data.json
     "img": "../img/xenoverse.jpg",
     "name": "Dragon Ball Xenoverse 2",
     "marca": "Bandai",
@@ -197,7 +225,11 @@
     "stock": "18"
   },
   {
+<<<<<<< HEAD:assets/js/data.json
+    "id": 19,
+=======
     "id": 20,
+>>>>>>> 40e44c89022d1a6e1eeb46fbcff16d18b24c7525:js/data.json
     "img": "../img/metal-gear.jpg",
     "name": "Metal Gear Solid 5",
     "marca": "Konami",
